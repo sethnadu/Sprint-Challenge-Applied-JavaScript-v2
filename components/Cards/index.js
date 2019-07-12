@@ -79,8 +79,6 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
 });
 
 
-
-
 function createArticle1 (headlineArticle, imgSrc, authorsNameArticle) {
     const card = document.createElement("div")
     const headline = document.createElement("div")
