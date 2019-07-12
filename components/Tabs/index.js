@@ -8,18 +8,14 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
+let tabsArray = [0, 1, 2, 3, 4]
 
-
-
+tabsArray.forEach(tab => {
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .then(data => {
- const javascript  = data.data.topics[0];
- const bootstrap  = data.data.topics[1];
- const technology  = data.data.topics[2];
- const jquery  = data.data.topics[3];
- const node  = data.data.topics[4];
+ const tabEach  = data.data.topics[tab];
  
- const info = tabBar(javascript, bootstrap, technology, jquery, node);
+ const info = tabBar(tabEach);
 
  topics.appendChild(info);
 
@@ -28,6 +24,9 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .catch(error => {
     console.log("There was an error fetching data", error)
 })
+
+});
+
 
 const topics = document.querySelector(".topics");
 

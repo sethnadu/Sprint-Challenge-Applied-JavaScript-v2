@@ -23,21 +23,21 @@ const cards =  document.querySelector(".cards-container");
 axios.get("https://lambda-times-backend.herokuapp.com/articles")
 
 .then(item => {
-    const javascriptHeadline = item.data.articles.javascript.headline;
-    const javascriptauthorPhote= item.data.articles.javascript.authorPhoto;
-    const javascriptauthorName = item.data.articles.javascript.authorName;
-    const bootstrapHeadline = item.data.articles.bootstrap.headline;
-    const bootstrapauthorPhote= item.data.articles.bootstrap.authorPhoto;
-    const bootstrapauthorName = item.data.articles.bootstrap.authorName;
-    const technologyHeadline = item.data.articles.technology.headline;
-    const technologyauthorPhote= item.data.articles.technology.authorPhoto;
-    const technologyauthorName = item.data.articles.technology.authorName;
-    const jqueryHeadline = item.data.articles.jquery.headline;
-    const jqueryauthorPhote= item.data.articles.jquery.authorPhoto;
-    const jqueryauthorName = item.data.articles.jquery.authorName;
-    const nodeHeadline = item.data.articles.node.headline;
-    const nodeauthorPhote= item.data.articles.node.authorPhoto;
-    const nodeauthorName = item.data.articles.node.authorName;
+    // const javascriptHeadline = item.data.articles.javascript.headline;
+    // const javascriptauthorPhote= item.data.articles.javascript.authorPhoto;
+    // const javascriptauthorName = item.data.articles.javascript.authorName;
+    // const bootstrapHeadline = item.data.articles.bootstrap.headline;
+    // const bootstrapauthorPhote= item.data.articles.bootstrap.authorPhoto;
+    // const bootstrapauthorName = item.data.articles.bootstrap.authorName;
+    // const technologyHeadline = item.data.articles.technology.headline;
+    // const technologyauthorPhote= item.data.articles.technology.authorPhoto;
+    // const technologyauthorName = item.data.articles.technology.authorName;
+    // const jqueryHeadline = item.data.articles.jquery.headline;
+    // const jqueryauthorPhote= item.data.articles.jquery.authorPhoto;
+    // const jqueryauthorName = item.data.articles.jquery.authorName;
+    // const nodeHeadline = item.data.articles.node.headline;
+    // const nodeauthorPhote= item.data.articles.node.authorPhoto;
+    // const nodeauthorName = item.data.articles.node.authorName;
 
     const javaScriptCard = createCard(javascriptHeadline, javascriptauthorPhote, javascriptauthorName)
     const bootstrapCard = createCard(bootstrapHeadline, bootstrapauthorPhote, bootstrapauthorName)
