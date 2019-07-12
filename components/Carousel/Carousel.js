@@ -59,7 +59,7 @@ function createCarousel() {
     right();
   })
 
-  return carousel
+  return carousel;
 
 }
   function left() {
