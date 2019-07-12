@@ -13,7 +13,7 @@ let tabsArray = [0, 1, 2, 3, 4]
 tabsArray.forEach(tab => {
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
 .then(data => {
- const tabEach  = data.data.topics[tab];
+ const tabEach = data.data.topics[tab];
  
  const info = tabBar(tabEach);
 
