@@ -26,9 +26,13 @@ function createCarousel() {
   const carousel = document.createElement("div");
   const leftButton = document.createElement("div");
   const img1 = document.createElement("img");
+  img1.setAttribute("src", "./assets/carousel/mountains.jpeg" )
   const img2 = document.createElement("img");
+  img2.setAttribute("src", "./assets/carousel/computer.jpeg" )
   const img3 = document.createElement("img");
+  img3.setAttribute("src", "./assets/carousel/trees.jpeg" )
   const img4 = document.createElement("img");
+  img4.setAttribute("src", "./assets/carousel/turntable.jpeg" )
   const rightButton = document.createElement("div");
 
   carousel.classList.add("carousel")
@@ -44,10 +48,6 @@ function createCarousel() {
 
 
 
-  img1.src = "./assets/carousel/mountains.jpeg";
-  img2.src = "./assets/carousel/computer.jpeg";
-  img3.src = "./assets/carousel/trees.jpeg";
-  img4.src = "./assets/carousel/turntable.jpeg";
 
   currentIndex = 0;
 
