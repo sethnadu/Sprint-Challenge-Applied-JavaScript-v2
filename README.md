@@ -1,5 +1,5 @@
 # Sprint-Challenge Applied Javascript - Lambda Times
-
+   
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored the DOM and the concept of components. During this Sprint, you studied the DOM, DOM Events, and Components, as well as HTTP GET requests, and the axios library. In your challenge this week, you will demonstrate proficiency by creating an online Lambda newspaper called "Lambda Times."
 
 ## Instructions
@@ -30,13 +30,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+(Document Object Mode) An (API) tree structure object representation that lets you interact with the page through styling, changing document structure and content.
+
 2. What is an event?
+
+Basically can represent any user interaction/ automatic interactions on a web page.
 
 3. What is an event listener?
 
+The function that is used to create events, and waits for them to be called in the code.
+
 4. Why would we convert a NodeList into an Array?
 
+It is very useful if we want to sort through any multiple elements with the same name.  When you first select an element with multiple locations in the code, it is a NodeList. You can not edit each one of these locations unless you use forEach, which is allowed, or unless you turn it into an array. Being an array, you now have all the access to array methods( such as filter/map/reduce) that can be executed on all the element locations to achieve the desired effects.
+
+
 5. What is a component?
+
+A component is a small part of an API that all components have that can be easily created and applied to the document code(full page). Everything needed is created in a separate file(usually) so it can be organized and applied to the full code along with other components. If created correctly, it is like a blueprint for styling/ action on a website that can be reused over and over.
 
 ### Git Set up
 
